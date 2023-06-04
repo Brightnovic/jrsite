@@ -1,0 +1,292 @@
+.container {
+
+
+    align-items: center;
+}
+
+.width {
+    max-width: 35rem !important;
+    margin: auto auto !important;
+    display: flex;
+    align-items: center;
+
+}
+
+.widths {
+    box-shadow: 3px 3px 4px rgb(169, 166, 166);
+    margin-top: 30vh;
+
+    height: 50vh;
+
+
+}
+
+
+#loginform {
+    margin-top: 5rem;
+
+}
+
+.container1 {
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 button {
+    margin: 1rem;
+    border: none;
+    background-color: darkcyan;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: white;
+    font-weight: bolder;
+}
+
+.form-control {
+    width: 20rem !important;
+}
+
+/* ogin code css */
+.vh {
+    height: 100vh !important;
+
+}
+
+.Dnone {
+    display: none;
+}
+
+.section2 {
+    display: flex;
+    height: 80vh !important;
+}
+
+@media (min-width: 1000px) {
+    .Dnone {
+        display: block;
+    }
+
+    .displaynone {
+        display: none;
+    }
+}
+
+/* login responsiveness */
+@media (max-width: 480px) {
+    .form-control {
+        width: 10rem !important;
+    }
+}
+
+/* upload */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+select {
+
+    appearance: none;
+
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+
+    cursor: pointer;
+
+}
+
+.select {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: .5em 1em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+}
+
+
+
+select option {
+    padding: .5em 1em;
+}
+
+.renderDiv {
+    height: 90%;
+    position: relative;
+    border: 2px solid #03A9F3;
+
+    margin-top: 3%;
+}
+
+
+
+/* 
+.renderDiv:hover {
+    border: none;
+    background:
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+    background-size: 4px 1px, 4px 1px, 1px 4px, 1px 4px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+}
+ */
+.renderDiv {
+    position: relative;
+}
+
+/* .renderDiv::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+} */
+
+.renderDiv {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 7px solid rgba(0, 255, 221, 0.521);
+        animation: clippath 3s infinite linear;
+    }
+}
+
+@keyframes clippath {
+
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
+
+
+
+
+
+/* change password */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.resetcontainer {
+    margin-top: 20%;
+}
+
+/* upload content style */
+
+#mediaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.mediaItem {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.mediaItem audio,
+.mediaItem video {
+    width: 100%;
+}
+
+.mediaItem a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .mediaItem {
+        width: calc(50% - 20px);
+    }
+}

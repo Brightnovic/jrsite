@@ -1,0 +1,189 @@
+:root {
+    --blue: #1e90ff;
+    --white: linear-gradient(90deg, rgba(20, 0, 36, 0.247) 0%, rgba(9, 9, 121, 0.301) 51%, rgba(0, 213, 255, 0.432) 100%);
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.capitar-text {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+body.dark-mode {
+    background-color: white;
+    color: black !important;
+}
+
+
+/* navbar adjustment */
+
+@media (max-width: 395px) {
+    body {
+        font-size: 0.5rem !important;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+
+    .miss {
+        display: none;
+    }
+}
+
+
+/* google icons for switch mode*/
+
+
+
+.material-symbols-outlined {
+    color: red;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* font awesome */
+.fas {
+    color: rgb(166, 255, 0) !important;
+    font-size: 1.3rem;
+}
+
+.bg-show {
+    background: black;
+    background: linear-gradient(90deg, rgba(20, 0, 36, 0.247) 0%, rgba(9, 9, 121, 0.301) 51%, rgba(0, 213, 255, 0.432) 100%);
+}
+
+
+
+
+.img-color {
+    color: brown;
+    display: flex;
+    justify-content: center;
+
+}
+
+.iconsize {
+    width: 2rem;
+}
+
+.buttonWidth {
+    width: 4rem;
+}
+
+.border-right {
+    border-right: white solid 1px;
+}
+
+.sectionOneBg {
+    background: radial-gradient(rgba(255, 255, 255, 0.137), rgba(255, 255, 255, 0.267));
+}
+
+.form {
+    width: 70%;
+}
+
+.searchButton {
+    width: 5rem !important;
+}
+
+.newsdiv {
+    width: 100%;
+    background: radial-gradient(rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.075))
+}
+
+
+/* .flexClass {
+    align-items: center;
+    justify-items: center;
+} */
+.centerContent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: center !important;
+}
+
+.aMargin div {
+    padding: 0.5rem 0;
+}
+
+.musicCard {
+    width: 17rem;
+    height: 10rem;
+}
+
+/* .mostPlayed {
+    background: radial-gradient(RGB(170 187 204), RGB(170 187 204));
+} */
+
+
+/* music page css styles */
+
+.scroll {
+    overflow-x: scroll;
+
+}
+
+.flexmuiscpage {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+/* social media page advert */
+
+.socialMediapadding {
+    margin-top: 30vh !important;
+}
+
+.bordermediapage {
+    border: solid 1px blue;
+}
+
+.buttonwidth {
+    width: 7rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+#contentContainer {
+
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.imgMusic {
+    overflow: hidden;
+    height: 29rem;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.lycris {
+    font-family: ;
+}
+
+/* 
+.mediacontainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+} */
+
+#renderdivs {
+    display: flex !important;
+    flex-direction: column !important;
+}
